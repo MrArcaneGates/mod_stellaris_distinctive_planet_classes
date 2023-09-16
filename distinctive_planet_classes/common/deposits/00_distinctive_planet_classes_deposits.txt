@@ -1,0 +1,32 @@
+d_spacelift = {
+	is_for_colonizable = yes
+	icon = "d_station_cargo"
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+				}
+			
+		}
+		job_trader_add = 1
+		trade_value_add = 8
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+			is_gestalt = yes
+			}
+			
+		}
+		produces = {
+			job_maintenance_drone_add = 1
+			job_technician_drone_add = 1
+		}
+	}
+}

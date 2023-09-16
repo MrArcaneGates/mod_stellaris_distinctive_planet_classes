@@ -1416,7 +1416,6 @@ pc_shattered_ring_habitable = {
 	moon_size = 1
 	colonizable = yes
 	district_set = shattered_ring_world
-	ideal = yes
 	starting_planet = no
 	orbit_lines = no
 	has_colonization_influence_cost = no		# applies when within own borders
@@ -1428,6 +1427,10 @@ pc_shattered_ring_habitable = {
 #	}
 
 	carry_cap_per_free_district = @carry_cap_normal
+
+	modifier = {
+		pop_environment_tolerance = 1.0
+	}
 }
 
 pc_habitat = {
